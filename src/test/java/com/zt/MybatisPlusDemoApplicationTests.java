@@ -42,8 +42,8 @@ class MybatisPlusDemoApplicationTests {
     @Test
     public void testUpdate(){
         User user = new User();
-        user.setId(1L);
-        user.setName("牛马");
+        user.setId(3L);
+        user.setName("李四");
         user.setAge(20);
 
         //
@@ -156,7 +156,6 @@ class MybatisPlusDemoApplicationTests {
     @Test
     public void testDeleteById(){
         userMapper.deleteById(2L);
-
     }
 
     //测试通过id批量删除
@@ -173,7 +172,4 @@ class MybatisPlusDemoApplicationTests {
         map.put("name", "李四");
         userMapper.deleteByMap(map);
     }
-
-
-
 }
